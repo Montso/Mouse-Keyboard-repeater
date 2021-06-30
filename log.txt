@@ -1,0 +1,26 @@
+2021-06-30 15:56:32,950, ('d', 'pressed')
+2021-06-30 15:56:33,062, ('d', 'released')
+2021-06-30 15:56:33,814, ('d', 'pressed')
+2021-06-30 15:56:33,950, ('d', 'released')
+2021-06-30 15:56:38,127, (<Key.esc: <27>>, 'pressed')
+2021-06-30 15:56:38,382, (<Key.esc: <27>>, 'released')
+2021-06-30 15:57:49,262, Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\MAHLONZA\AppData\Roaming\Python\Python38\site-packages\pynput\_util\win32.py", line 380, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\MAHLONZA\AppData\Roaming\Python\Python38\site-packages\pynput\_util\win32.py", line 395, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MAHLONZA\AppData\Roaming\Python\Python38\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\MAHLONZA\AppData\Roaming\Python\Python38\site-packages\pynput\_util\win32.py", line 384, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\MAHLONZA\AppData\Roaming\Python\Python38\site-packages\pynput\mouse\_win32.py", line 208, in _handle
+    self.on_move(data.pt.x, data.pt.y)
+  File "C:\Users\MAHLONZA\AppData\Roaming\Python\Python38\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+TypeError: on_move() missing 1 required positional argument: 'y'

@@ -3,7 +3,7 @@
 from pynput import keyboard, mouse
 import logging
 
-logging.basicConfig(filename="../temp/log.txt", level=logging.DEBUG, format='%(asctime)s|%(message)s')
+logging.basicConfig(filename="../temp/log.txt", level=logging.DEBUG, format='%(asctime)s.%(msecs)05d|%(message)s')
 
 
 '''

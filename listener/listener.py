@@ -3,7 +3,7 @@
 from pynput import keyboard, mouse
 import logging
 
-logging.basicConfig(filename="log.txt", level=logging.DEBUG, format='%(asctime)s, %(message)s')
+logging.basicConfig(filename="../temp/log.txt", level=logging.DEBUG, format='%(asctime)s|%(message)s')
 
 
 '''
@@ -35,18 +35,18 @@ class keyB():
 	def on_press(self, key):
 		try:
 			print("key pressed: {0}".format(key.char))
-			logging.debug(str((key.char, "pressed")))
+			logging.debug("{}|{}".format(key.char, 'p'))
 		except:
 			print("Special key pressed: {0}".format(key))
-			logging.debug(str((key, "pressed")))
+			logging.debug("{}|{}".format(key, 'p'))
 
 	def on_rel(self, key):
 		try:
 			print("key released: {0}".format(key))
-			logging.debug(str((key.char, "released")))
+			logging.debug("{}|{}".format(key.char, 'r'))
 		except:
 			print("Special key released: {0}".format(key))
-			logging.debug(str((key, "released")))
+			logging.debug("{}|{}".format(key, 'r'))
 
 
 		#exist on ESC

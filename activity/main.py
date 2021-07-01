@@ -13,9 +13,17 @@ for log in logs:
 	log[2] = log[2][:-1] #event: 'r\n' => 'r'
 
 	time_str = log[0]
-	time_obj = datetime.strptime(time_str, "%y-%m-%d %H:%M:%S") #string to time object
+	time_obj = datetime.strptime(time_str, "%y-%m-%d %H:%M:%S.%f") #string to time object
 	log[0] = time_obj
 	log = (log[0], log[1], log[2])
 	print(log)
-print(logs)
 
+for log in logs:
+
+	if logs.indexOf(log) == 0:
+		log[0] = 0
+	elif logs.indexOf(log) == len(logs-1):
+		log[0] = -1
+	else:
+		log[0] = logs[logs.indexOf(log)+1][0] - logs[logs.indexOf(log)][0]
+print(logs)

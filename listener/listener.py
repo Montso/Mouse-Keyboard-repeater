@@ -6,23 +6,23 @@ import logging
 logging.basicConfig(filename="../temp/log.txt", level=logging.DEBUG, format='%(asctime)s|%(message)s')
 
 
-'''
+
 class mous():
 	#Mouse activity listener
 
 
 	def __init__(self):
-		pass
+		print("mouse")
 	
-	def on_move(self,x, y):
+	def on_move(self, x, y):
 		print("moved to {}".format((x, y)))
-		logging.debug(str((x,y)))
+		logging.debug("{}|{}".format(x,y))
 
 
-	def on_scroll(x, y, dy):
+	def on_scroll(self, x, y, dx, dy):
 		print("Scrolled {0} from {1}\n Vector: {2}".format("Down" if dy < 0 else "Up", (x,y), dy))
-		logging.debug(str((x,y,dy)))
-'''
+		logging.debug("{}|{}|{}".format(x,y,dy,dx))
+
 
 class keyB():
 	'''
@@ -54,8 +54,8 @@ class keyB():
 			return False
 
 keyB = keyB()
-# mou = mous()
+mou = mous()
 with keyboard.Listener(on_press=keyB.on_press, on_release=keyB.on_rel) as listner:
-	#with mouse.Listener(on_move=mous.on_move, on_scroll=mous.on_scroll) as listner:
-	listner.join()
+	with mouse.Listener(on_move=mou.on_move, on_scroll=mou.on_scroll) as listner:
+		listner.join()
 

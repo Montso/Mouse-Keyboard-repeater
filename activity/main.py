@@ -6,10 +6,10 @@ with open('../temp/log.txt', 'r') as temp:
 		temp.close()
 
 logs = [log.split('|') for log in logs] #split each line data: [time, key, evennt]
-for log in logs: log[1] = log[1].replace("\'", "\"")[:-1]
-print(logs)
-for log in logs: log[1] = json.loads(log[1])
-print(logs)
+
+for log in logs: log[1] = log[1].replace("\'", "\"")[:-1] #convert to json format
+for log in logs: log[1] = json.loads(log[1]) #convert dict string representations to dictionaries
+
 
 
 # for log in logs:

@@ -1,94 +1,106 @@
-2021-07-03 19:46:46,224|{'obj': 'keyboard', 'event': 'keypress', 'key': 'c', 'status': 'p'}
-2021-07-03 19:46:46,380|{'obj': 'keyboard', 'event': 'release', 'key': 'c', 'status': 'r'}
-2021-07-03 19:46:46,771|{'obj': 'keyboard', 'event': 'keypress', 'key': 'f', 'status': 'p'}
-2021-07-03 19:46:46,787|{'obj': 'keyboard', 'event': 'keypress', 'key': 'd', 'status': 'p'}
-2021-07-03 19:46:46,896|{'obj': 'keyboard', 'event': 'release', 'key': 'd', 'status': 'r'}
-2021-07-03 19:46:46,959|{'obj': 'keyboard', 'event': 'release', 'key': 'f', 'status': 'r'}
-2021-07-03 19:46:47,240|{'obj': 'keyboard', 'event': 'keypress', 'key': 'v', 'status': 'p'}
-2021-07-03 19:46:47,396|{'obj': 'keyboard', 'event': 'release', 'key': 'v', 'status': 'r'}
-2021-07-03 19:46:47,506|{'obj': 'keyboard', 'event': 'keypress', 'key': 'd', 'status': 'p'}
-2021-07-03 19:46:47,662|{'obj': 'keyboard', 'event': 'release', 'key': 'd', 'status': 'r'}
-2021-07-03 19:46:50,475|{'obj': 'keyboard', 'event': 'keypress', 'key': 'a', 'status': 'p'}
-2021-07-03 19:46:50,616|{'obj': 'keyboard', 'event': 'release', 'key': 'a', 'status': 'r'}
-2021-07-03 19:46:51,506|{'obj': 'keyboard', 'event': 'keypress', 'key': 'b', 'status': 'p'}
-2021-07-03 19:46:51,662|{'obj': 'keyboard', 'event': 'release', 'key': 'b', 'status': 'r'}
-2021-07-03 19:46:51,944|{'obj': 'keyboard', 'event': 'keypress', 'key': 'c', 'status': 'p'}
-2021-07-03 19:46:52,053|{'obj': 'keyboard', 'event': 'release', 'key': 'c', 'status': 'r'}
-2021-07-03 19:46:52,241|{'obj': 'keyboard', 'event': 'keypress', 'key': 'd', 'status': 'p'}
-2021-07-03 19:46:52,350|{'obj': 'keyboard', 'event': 'release', 'key': 'd', 'status': 'r'}
-2021-07-03 19:46:52,600|{'obj': 'keyboard', 'event': 'keypress', 'key': 'e', 'status': 'p'}
-2021-07-03 19:46:52,678|{'obj': 'keyboard', 'event': 'release', 'key': 'e', 'status': 'r'}
-2021-07-03 19:46:55,038|{'obj': 'keyboard', 'event': 'keypress', 'key': 'Key.shift', 'status': 'p'}
-2021-07-03 19:46:55,132|{'obj': 'keyboard', 'event': 'release', 'key': 'Key.shift', 'status': 'r'}
-2021-07-03 19:46:55,929|{'obj': 'keyboard', 'event': 'keypress', 'key': 'Key.space', 'status': 'p'}
-2021-07-03 19:46:56,054|{'obj': 'keyboard', 'event': 'release', 'key': 'Key.space', 'status': 'r'}
-2021-07-03 19:46:57,507|{'obj': 'keyboard', 'event': 'keypress', 'key': 'Key.esc', 'status': 'p'}
-2021-07-03 19:46:57,757|{'obj': 'keyboard', 'event': 'release', 'key': 'Key.esc', 'status': 'r'}
-2021-07-03 19:46:58,383|{'obj': 'mouse', 'event': 'move', 'x': 711, 'y': 433}
-2021-07-03 19:46:58,430|{'obj': 'mouse', 'event': 'move', 'x': 713, 'y': 434}
-2021-07-03 19:46:58,445|{'obj': 'mouse', 'event': 'move', 'x': 718, 'y': 434}
-2021-07-03 19:46:58,461|{'obj': 'mouse', 'event': 'move', 'x': 726, 'y': 434}
-2021-07-03 19:46:58,461|{'obj': 'mouse', 'event': 'move', 'x': 732, 'y': 434}
-2021-07-03 19:46:58,477|{'obj': 'mouse', 'event': 'move', 'x': 735, 'y': 432}
-2021-07-03 19:46:58,477|{'obj': 'mouse', 'event': 'move', 'x': 737, 'y': 431}
-2021-07-03 19:46:58,492|{'obj': 'mouse', 'event': 'move', 'x': 739, 'y': 430}
-2021-07-03 19:46:58,508|{'obj': 'mouse', 'event': 'move', 'x': 740, 'y': 429}
-2021-07-03 19:46:59,555|{'obj': 'mouse', 'event': 'move', 'x': 750, 'y': 429}
-2021-07-03 19:46:59,555|{'obj': 'mouse', 'event': 'move', 'x': 778, 'y': 422}
-2021-07-03 19:46:59,570|{'obj': 'mouse', 'event': 'move', 'x': 820, 'y': 408}
-2021-07-03 19:46:59,570|{'obj': 'mouse', 'event': 'move', 'x': 870, 'y': 395}
-2021-07-03 19:46:59,586|{'obj': 'mouse', 'event': 'move', 'x': 942, 'y': 384}
-2021-07-03 19:46:59,586|{'obj': 'mouse', 'event': 'move', 'x': 1014, 'y': 374}
-2021-07-03 19:46:59,602|{'obj': 'mouse', 'event': 'move', 'x': 1084, 'y': 366}
-2021-07-03 19:46:59,602|{'obj': 'mouse', 'event': 'move', 'x': 1151, 'y': 352}
-2021-07-03 19:46:59,617|{'obj': 'mouse', 'event': 'move', 'x': 1194, 'y': 347}
-2021-07-03 19:46:59,617|{'obj': 'mouse', 'event': 'move', 'x': 1244, 'y': 337}
-2021-07-03 19:46:59,633|{'obj': 'mouse', 'event': 'move', 'x': 1287, 'y': 332}
-2021-07-03 19:46:59,633|{'obj': 'mouse', 'event': 'move', 'x': 1321, 'y': 324}
-2021-07-03 19:46:59,649|{'obj': 'mouse', 'event': 'move', 'x': 1353, 'y': 319}
-2021-07-03 19:46:59,649|{'obj': 'mouse', 'event': 'move', 'x': 1376, 'y': 312}
-2021-07-03 19:46:59,664|{'obj': 'mouse', 'event': 'move', 'x': 1396, 'y': 307}
-2021-07-03 19:46:59,664|{'obj': 'mouse', 'event': 'move', 'x': 1416, 'y': 301}
-2021-07-03 19:46:59,680|{'obj': 'mouse', 'event': 'move', 'x': 1425, 'y': 299}
-2021-07-03 19:46:59,680|{'obj': 'mouse', 'event': 'move', 'x': 1435, 'y': 297}
-2021-07-03 19:46:59,695|{'obj': 'mouse', 'event': 'move', 'x': 1442, 'y': 294}
-2021-07-03 19:46:59,695|{'obj': 'mouse', 'event': 'move', 'x': 1443, 'y': 292}
-2021-07-03 19:46:59,711|{'obj': 'mouse', 'event': 'move', 'x': 1445, 'y': 291}
-2021-07-03 19:46:59,711|{'obj': 'mouse', 'event': 'move', 'x': 1448, 'y': 291}
-2021-07-03 19:46:59,727|{'obj': 'mouse', 'event': 'move', 'x': 1451, 'y': 290}
-2021-07-03 19:46:59,727|{'obj': 'mouse', 'event': 'move', 'x': 1452, 'y': 290}
-2021-07-03 19:46:59,742|{'obj': 'mouse', 'event': 'move', 'x': 1456, 'y': 285}
-2021-07-03 19:46:59,742|{'obj': 'mouse', 'event': 'move', 'x': 1468, 'y': 285}
-2021-07-03 19:46:59,758|{'obj': 'mouse', 'event': 'move', 'x': 1480, 'y': 283}
-2021-07-03 19:46:59,758|{'obj': 'mouse', 'event': 'move', 'x': 1494, 'y': 281}
-2021-07-03 19:46:59,774|{'obj': 'mouse', 'event': 'move', 'x': 1508, 'y': 281}
-2021-07-03 19:46:59,774|{'obj': 'mouse', 'event': 'move', 'x': 1519, 'y': 281}
-2021-07-03 19:46:59,789|{'obj': 'mouse', 'event': 'move', 'x': 1534, 'y': 281}
-2021-07-03 19:46:59,805|{'obj': 'mouse', 'event': 'move', 'x': 1542, 'y': 281}
-2021-07-03 19:46:59,805|{'obj': 'mouse', 'event': 'move', 'x': 1547, 'y': 281}
-2021-07-03 19:46:59,820|{'obj': 'mouse', 'event': 'move', 'x': 1553, 'y': 281}
-2021-07-03 19:46:59,820|{'obj': 'mouse', 'event': 'move', 'x': 1558, 'y': 281}
-2021-07-03 19:46:59,836|{'obj': 'mouse', 'event': 'move', 'x': 1560, 'y': 281}
-2021-07-03 19:46:59,836|{'obj': 'mouse', 'event': 'move', 'x': 1565, 'y': 281}
-2021-07-03 19:46:59,852|{'obj': 'mouse', 'event': 'move', 'x': 1566, 'y': 281}
-2021-07-03 19:46:59,852|{'obj': 'mouse', 'event': 'move', 'x': 1567, 'y': 281}
-2021-07-03 19:46:59,867|{'obj': 'mouse', 'event': 'move', 'x': 1568, 'y': 281}
-2021-07-03 19:46:59,899|{'obj': 'mouse', 'event': 'move', 'x': 1572, 'y': 280}
-2021-07-03 19:46:59,961|{'obj': 'mouse', 'event': 'move', 'x': 1575, 'y': 277}
-2021-07-03 19:46:59,977|{'obj': 'mouse', 'event': 'move', 'x': 1577, 'y': 276}
-2021-07-03 19:46:59,993|{'obj': 'mouse', 'event': 'move', 'x': 1578, 'y': 276}
-2021-07-03 19:47:00,008|{'obj': 'mouse', 'event': 'move', 'x': 1579, 'y': 275}
-2021-07-03 19:47:00,274|{'obj': 'mouse', 'event': 'move', 'x': 1579, 'y': 272}
-2021-07-03 19:47:00,289|{'obj': 'mouse', 'event': 'move', 'x': 1579, 'y': 271}
-2021-07-03 19:47:00,352|{'obj': 'mouse', 'event': 'move', 'x': 1579, 'y': 270}
-2021-07-03 19:47:00,367|{'obj': 'mouse', 'event': 'move', 'x': 1579, 'y': 267}
-2021-07-03 19:47:00,367|{'obj': 'mouse', 'event': 'move', 'x': 1579, 'y': 266}
-2021-07-03 19:47:00,383|{'obj': 'mouse', 'event': 'move', 'x': 1579, 'y': 265}
-2021-07-03 19:47:00,399|{'obj': 'mouse', 'event': 'move', 'x': 1579, 'y': 264}
-2021-07-03 19:47:00,414|{'obj': 'mouse', 'event': 'move', 'x': 1580, 'y': 262}
-2021-07-03 19:47:00,414|{'obj': 'mouse', 'event': 'move', 'x': 1580, 'y': 261}
-2021-07-03 19:47:00,430|{'obj': 'mouse', 'event': 'move', 'x': 1580, 'y': 260}
-2021-07-03 19:47:00,461|{'obj': 'mouse', 'event': 'move', 'x': 1580, 'y': 259}
-2021-07-03 19:47:00,461|{'obj': 'mouse', 'event': 'move', 'x': 1580, 'y': 258}
-2021-07-03 19:47:00,508|{'obj': 'mouse', 'event': 'move', 'x': 1580, 'y': 255}
-2021-07-03 19:47:00,539|{'obj': 'mouse', 'event': 'move', 'x': 1580, 'y': 254}
+2021-07-07 09:18:08,815|{'obj': 'mouse', 'event': 'move', 'x': 1024, 'y': 581}
+2021-07-07 09:18:08,836|{'obj': 'mouse', 'event': 'move', 'x': 1025, 'y': 581}
+2021-07-07 09:18:08,846|{'obj': 'mouse', 'event': 'move', 'x': 1026, 'y': 581}
+2021-07-07 09:18:08,856|{'obj': 'mouse', 'event': 'move', 'x': 1029, 'y': 577}
+2021-07-07 09:18:08,866|{'obj': 'mouse', 'event': 'move', 'x': 1031, 'y': 573}
+2021-07-07 09:18:08,879|{'obj': 'mouse', 'event': 'move', 'x': 1036, 'y': 566}
+2021-07-07 09:18:08,887|{'obj': 'mouse', 'event': 'move', 'x': 1039, 'y': 559}
+2021-07-07 09:18:08,896|{'obj': 'mouse', 'event': 'move', 'x': 1041, 'y': 552}
+2021-07-07 09:18:08,905|{'obj': 'mouse', 'event': 'move', 'x': 1045, 'y': 545}
+2021-07-07 09:18:08,927|{'obj': 'mouse', 'event': 'move', 'x': 1046, 'y': 539}
+2021-07-07 09:18:08,993|{'obj': 'mouse', 'event': 'move', 'x': 1053, 'y': 527}
+2021-07-07 09:18:09,019|{'obj': 'mouse', 'event': 'move', 'x': 1053, 'y': 525}
+2021-07-07 09:18:09,029|{'obj': 'mouse', 'event': 'move', 'x': 1054, 'y': 525}
+2021-07-07 09:18:09,538|{'obj': 'keyboard', 'event': 'press', 'key': 's'}
+2021-07-07 09:18:09,695|{'obj': 'keyboard', 'event': 'press', 'key': 'd'}
+2021-07-07 09:18:09,802|{'obj': 'keyboard', 'event': 'release', 'key': 's'}
+2021-07-07 09:18:09,932|{'obj': 'keyboard', 'event': 'release', 'key': 'd'}
+2021-07-07 09:18:10,188|{'obj': 'keyboard', 'event': 'press', 'key': 'd'}
+2021-07-07 09:18:10,344|{'obj': 'keyboard', 'event': 'press', 'key': 'c'}
+2021-07-07 09:18:10,360|{'obj': 'keyboard', 'event': 'release', 'key': 'd'}
+2021-07-07 09:18:10,424|{'obj': 'keyboard', 'event': 'press', 'key': 'k'}
+2021-07-07 09:18:10,509|{'obj': 'keyboard', 'event': 'release', 'key': 'c'}
+2021-07-07 09:18:10,669|{'obj': 'keyboard', 'event': 'release', 'key': 'k'}
+2021-07-07 09:18:10,736|{'obj': 'keyboard', 'event': 'press', 'key': 's'}
+2021-07-07 09:18:10,988|{'obj': 'keyboard', 'event': 'release', 'key': 's'}
+2021-07-07 09:18:11,081|{'obj': 'keyboard', 'event': 'press', 'key': 'l'}
+2021-07-07 09:18:11,237|{'obj': 'keyboard', 'event': 'release', 'key': 'l'}
+2021-07-07 09:18:11,324|{'obj': 'keyboard', 'event': 'press', 'key': 'v'}
+2021-07-07 09:18:11,336|{'obj': 'keyboard', 'event': 'press', 'key': <Key.space: ' '>}
+2021-07-07 09:18:11,535|{'obj': 'keyboard', 'event': 'release', 'key': <Key.space: ' '>}
+2021-07-07 09:18:11,619|{'obj': 'keyboard', 'event': 'release', 'key': 'v'}
+2021-07-07 09:18:12,443|{'obj': 'mouse', 'event': 'move', 'x': 1054, 'y': 524}
+2021-07-07 09:18:12,512|{'obj': 'mouse', 'event': 'move', 'x': 1054, 'y': 523}
+2021-07-07 09:18:12,613|{'obj': 'mouse', 'event': 'move', 'x': 1054, 'y': 522}
+2021-07-07 09:18:12,624|{'obj': 'mouse', 'event': 'move', 'x': 1054, 'y': 521}
+2021-07-07 09:18:12,694|{'obj': 'mouse', 'event': 'move', 'x': 1054, 'y': 519}
+2021-07-07 09:18:12,723|{'obj': 'mouse', 'event': 'move', 'x': 1054, 'y': 517}
+2021-07-07 09:18:12,796|{'obj': 'keyboard', 'event': 'press', 'key': 'd'}
+2021-07-07 09:18:12,925|{'obj': 'keyboard', 'event': 'press', 'key': 'f'}
+2021-07-07 09:18:13,046|{'obj': 'keyboard', 'event': 'release', 'key': 'd'}
+2021-07-07 09:18:13,107|{'obj': 'keyboard', 'event': 'press', 'key': 'v'}
+2021-07-07 09:18:13,160|{'obj': 'keyboard', 'event': 'release', 'key': 'f'}
+2021-07-07 09:18:13,172|{'obj': 'keyboard', 'event': 'release', 'key': 'v'}
+2021-07-07 09:18:13,291|{'obj': 'keyboard', 'event': 'press', 'key': 'v'}
+2021-07-07 09:18:13,495|{'obj': 'keyboard', 'event': 'release', 'key': 'v'}
+2021-07-07 09:18:14,376|{'obj': 'keyboard', 'event': 'press', 'key': 'l'}
+2021-07-07 09:18:14,439|{'obj': 'keyboard', 'event': 'press', 'key': 'k'}
+2021-07-07 09:18:14,549|{'obj': 'keyboard', 'event': 'release', 'key': 'l'}
+2021-07-07 09:18:14,609|{'obj': 'keyboard', 'event': 'release', 'key': 'k'}
+2021-07-07 09:18:14,843|{'obj': 'keyboard', 'event': 'press', 'key': 'v'}
+2021-07-07 09:18:14,901|{'obj': 'keyboard', 'event': 'press', 'key': <Key.space: ' '>}
+2021-07-07 09:18:15,095|{'obj': 'keyboard', 'event': 'release', 'key': 'v'}
+2021-07-07 09:18:15,115|{'obj': 'keyboard', 'event': 'release', 'key': <Key.space: ' '>}
+2021-07-07 09:18:15,673|{'obj': 'keyboard', 'event': 'press', 'key': <Key.space: ' '>}
+2021-07-07 09:18:15,902|{'obj': 'keyboard', 'event': 'release', 'key': <Key.space: ' '>}
+2021-07-07 09:18:16,067|{'obj': 'keyboard', 'event': 'press', 'key': <Key.space: ' '>}
+2021-07-07 09:18:16,330|{'obj': 'keyboard', 'event': 'release', 'key': <Key.space: ' '>}
+2021-07-07 09:18:18,462|{'obj': 'keyboard', 'event': 'press', 'key': 'k'}
+2021-07-07 09:18:18,523|{'obj': 'keyboard', 'event': 'release', 'key': 'k'}
+2021-07-07 09:18:19,771|{'obj': 'mouse', 'event': 'click', 'button': <Button.left: (4, 2, 0)>, 'status': True}
+2021-07-07 09:18:20,682|{'obj': 'mouse', 'event': 'click', 'button': <Button.left: (4, 2, 0)>, 'status': False}
+2021-07-07 09:18:20,703|{'obj': 'keyboard', 'event': 'press', 'key': 'k'}
+2021-07-07 09:18:20,904|{'obj': 'keyboard', 'event': 'release', 'key': 'k'}
+2021-07-07 09:18:21,950|{'obj': 'keyboard', 'event': 'press', 'key': 'k'}
+2021-07-07 09:18:22,213|{'obj': 'keyboard', 'event': 'release', 'key': 'k'}
+2021-07-07 09:18:22,905|{'obj': 'mouse', 'event': 'click', 'button': <Button.right: (16, 8, 0)>, 'status': True}
+2021-07-07 09:23:59,410|{'obj': 'keyboard', 'event': 'press', 'key': 'k'}
+2021-07-07 09:23:59,420|{'obj': 'keyboard', 'event': 'press', 'key': 'j'}
+2021-07-07 09:23:59,582|{'obj': 'keyboard', 'event': 'release', 'key': 'j'}
+2021-07-07 09:23:59,592|{'obj': 'keyboard', 'event': 'release', 'key': 'k'}
+2021-07-07 09:24:00,455|{'obj': 'mouse', 'event': 'move', 'x': 1075, 'y': 663}
+2021-07-07 09:24:00,466|{'obj': 'mouse', 'event': 'move', 'x': 1075, 'y': 660}
+2021-07-07 09:24:00,476|{'obj': 'mouse', 'event': 'move', 'x': 1077, 'y': 659}
+2021-07-07 09:24:00,486|{'obj': 'mouse', 'event': 'move', 'x': 1078, 'y': 656}
+2021-07-07 09:24:00,500|{'obj': 'mouse', 'event': 'move', 'x': 1079, 'y': 653}
+2021-07-07 09:24:00,506|{'obj': 'mouse', 'event': 'move', 'x': 1080, 'y': 652}
+2021-07-07 09:24:00,516|{'obj': 'mouse', 'event': 'move', 'x': 1083, 'y': 650}
+2021-07-07 09:24:00,527|{'obj': 'mouse', 'event': 'move', 'x': 1084, 'y': 648}
+2021-07-07 09:24:00,537|{'obj': 'mouse', 'event': 'move', 'x': 1086, 'y': 647}
+2021-07-07 09:24:00,547|{'obj': 'mouse', 'event': 'move', 'x': 1086, 'y': 646}
+2021-07-07 09:24:00,555|{'obj': 'mouse', 'event': 'move', 'x': 1087, 'y': 645}
+2021-07-07 09:24:00,567|{'obj': 'mouse', 'event': 'move', 'x': 1088, 'y': 644}
+2021-07-07 09:24:00,596|{'obj': 'mouse', 'event': 'move', 'x': 1089, 'y': 642}
+2021-07-07 09:24:00,984|{'obj': 'mouse', 'event': 'click', 'button': <Button.left: (4, 2, 0)>, 'status': True}
+2021-07-07 09:24:12,046|{'obj': 'mouse', 'event': 'click', 'button': <Button.left: (4, 2, 0)>, 'status': False}
+2021-07-07 09:24:12,058|{'obj': 'keyboard', 'event': 'press', 'key': <Key.ctrl_l: <162>>}
+2021-07-07 09:24:12,064|{'obj': 'keyboard', 'event': 'release', 'key': 'f'}
+2021-07-07 09:24:13,639|{'obj': 'keyboard', 'event': 'press', 'key': 't'}
+2021-07-07 09:24:13,707|{'obj': 'keyboard', 'event': 'release', 'key': 't'}
+2021-07-07 09:24:13,709|{'obj': 'keyboard', 'event': 'press', 'key': 't'}
+2021-07-07 09:24:13,790|{'obj': 'keyboard', 'event': 'press', 'key': 'x'}
+2021-07-07 09:24:13,798|{'obj': 'keyboard', 'event': 'release', 'key': 't'}
+2021-07-07 09:24:13,892|{'obj': 'keyboard', 'event': 'release', 'key': 'x'}
+2021-07-07 09:24:14,571|{'obj': 'keyboard', 'event': 'press', 'key': <Key.alt_l: <164>>}
+2021-07-07 09:24:14,778|{'obj': 'keyboard', 'event': 'release', 'key': <Key.alt_l: <164>>}
+2021-07-07 09:24:15,077|{'obj': 'keyboard', 'event': 'press', 'key': 'h'}
+2021-07-07 09:24:15,282|{'obj': 'keyboard', 'event': 'release', 'key': 'h'}
+2021-07-07 09:24:15,565|{'obj': 'keyboard', 'event': 'press', 'key': 'v'}
+2021-07-07 09:24:15,743|{'obj': 'keyboard', 'event': 'release', 'key': 'v'}
+2021-07-07 09:24:16,570|{'obj': 'keyboard', 'event': 'press', 'key': 'b'}
+2021-07-07 09:24:16,792|{'obj': 'keyboard', 'event': 'release', 'key': 'b'}
+2021-07-07 09:24:16,986|{'obj': 'keyboard', 'event': 'press', 'key': 'j'}
+2021-07-07 09:24:17,134|{'obj': 'keyboard', 'event': 'release', 'key': 'j'}
+2021-07-07 09:24:19,743|{'obj': 'keyboard', 'event': 'press', 'key': <Key.shift: <160>>}
+2021-07-07 09:24:19,944|{'obj': 'keyboard', 'event': 'release', 'key': <Key.shift: <160>>}
+2021-07-07 09:24:21,797|{'obj': 'mouse', 'event': 'click', 'button': <Button.right: (16, 8, 0)>, 'status': True}

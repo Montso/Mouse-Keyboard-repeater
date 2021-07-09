@@ -2,13 +2,14 @@ from pynput import keyboard, mouse
 import logging
 import log_compiler
 
-logging.basicConfig(filename="temp/log.txt", level=logging.DEBUG, format='%(asctime)s|%(message)s')
+logging.basicConfig(filename="temp/log1.txt", level=logging.DEBUG, format='%(asctime)s|%(message)s')
 
 class Mouse():
 
 
 	def __init__(self):
 		self.obj = "mouse"
+
 
 	def on_move(self, x, y):
 		print("moved to {}".format((x, y)))
@@ -21,13 +22,25 @@ class Mouse():
 		logging.debug(event)
 
 	def on_scroll(self, x, y, dx, dy):
-		print("Scrolled {0} from {1}\n Vector: {2}".format("Down" if dy < 0 else "Up", (x,y), dy))
+		print(dx, dy)
 		event = {
 				"obj": self.obj,
 				"event": "scroll",
-				"dy": x
+				"dy": dy
 		        }
 		logging.debug(event)
+
+	def on_click(self, x, y, button, pressed):
+		print(button, pressed)
+		event = {
+				"obj": self.obj,
+				"event": "click",
+				"button": button,
+				"status": pressed
+		        }
+		logging.debug(event)
+		if button == mouse.Button.right and pressed == True:
+			return False
 
 class Keyboard():
 
@@ -39,7 +52,7 @@ class Keyboard():
 			print("key pressed: {0}".format(key.char))
 			event = {
 				"obj": self.obj,
-				"event": "p",
+				"event": "press",
 				"key": key.char
 		        }
 			logging.debug(event)
@@ -49,8 +62,8 @@ class Keyboard():
 
 			event = {
 				"obj": self.obj,
-				"event": "p",
-				"key": str(key)
+				"event": "press",
+				"key": key
 		        }
 			logging.debug(event)
 
@@ -59,7 +72,7 @@ class Keyboard():
 			print("key released: {0}".format(key))
 			event = {
 				"obj": self.obj,
-				"event": "r",
+				"event": "release",
 				"key": key.char
 		        }
 			logging.debug(event)
@@ -67,8 +80,8 @@ class Keyboard():
 			print("Special key released: {0}".format(key))
 			event = {
 				"obj": self.obj,
-				"event": "r",
-				"key": str(key)
+				"event": "release",
+				"key": key
 				}
 			logging.debug(event)
 
@@ -80,7 +93,7 @@ def main():
 	keyB = Keyboard()
 	mous = Mouse()
 	with keyboard.Listener(on_press=keyB.on_press, on_release=keyB.on_rel) as listner:
-		with mouse.Listener(on_move=mous.on_move, on_scroll=mous.on_scroll) as listner:
+		with mouse.Listener(on_move=mous.on_move, on_scroll=mous.on_scroll, on_click=mous.on_click) as listner:
 			listner.join()
 
 if __name__ == '__main__':

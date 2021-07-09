@@ -2,7 +2,7 @@ from datetime import datetime
 
 def main():
 
-	with open('temp/log.txt', 'r') as temp:
+	with open('temp/log1.txt', 'r') as temp:
 			logs = temp.readlines() #store each line as list item
 			temp.close()
 
@@ -16,8 +16,7 @@ def main():
 
 
 	for log in logs:
-		print("log: ", type(log))
-		print("logs: ", type(logs))
+
 		if logs.index(log) == 0: #flag first event with t=0
 			log[0] = int(0)
 		elif logs.index(log) == (len(logs)-1): #flag first event with t=-1
@@ -26,8 +25,6 @@ def main():
 			log[0] = logs[logs.index(log)+1][0] - logs[logs.index(log)][0]
 			log[0] = log[0].total_seconds()
 			
-	print(logs)
-
 	file = open('logs/log.txt', 'w')
 	for log in logs: file.write("{}|{}".format(log[0], log[1]))
 

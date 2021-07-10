@@ -1,3 +1,6 @@
+'''
+Prepares initial logs for intepretation
+'''
 from datetime import datetime
 
 def main():
@@ -6,7 +9,7 @@ def main():
 			logs = temp.readlines() #store each line as list item
 			temp.close()
 
-	logs = [log.split('|') for log in logs] #split each line data: [time, key, evennt]
+	logs = [log.split('|') for log in logs] #split each line data: [time, event_dict]
 
 
 	for log in logs:
@@ -19,10 +22,10 @@ def main():
 
 		if logs.index(log) == 0: #flag first event with t=0
 			log[0] = int(0)
-		elif logs.index(log) == (len(logs)-1): #flag first event with t=-1
+		elif logs.index(log) == (len(logs)-1): #flag last event with t=-1
 			log[0] = int(-1)
 		else:
-			log[0] = logs[logs.index(log)+1][0] - logs[logs.index(log)][0]
+			log[0] = logs[logs.index(log)+1][0] - logs[logs.index(log)][0] #set time as delta time, lag time, from next command
 			log[0] = log[0].total_seconds()
 			
 	file = open('logs/log.txt', 'w')

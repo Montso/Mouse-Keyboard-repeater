@@ -1,9 +1,11 @@
+'''
+Controls mouse and keyboard
+'''
 from pynput.mouse import Button, Controller as mouseController
 from pynput.keyboard import Key, Controller as keyboardController
 from log_parser import Parse
-import pdb
+import pdb, math
 from time import sleep
-# pdb.set_trace()
 
 
 class Mouse:
@@ -11,11 +13,10 @@ class Mouse:
 	def __init__(self):		
 		self.mouse = mouseController()
 
-	def pos(self, x, y):
-		pass#self.mouse.position = (10, 20)
 
-	def move(self, x, y):
-		self.mouse.move(x, y)
+	def pos(self, x, y):
+		self.mouse.position = (math.floor(x*0.7), math.floor(y*0.7))
+		print(x,y)
 
 	def click(self, button):
 		self.mouse.press(button)
@@ -29,16 +30,22 @@ class Mouse:
 
 	def run(self, cmd):
 		if cmd["event"] == "click":
-			if cmd["status"] == True:
-				self.click(cmd["button"])
-			elif cmd["status"] == False:
-				self.release(cmd["button"])
+			if cmd["button"] == "Button.left":
+				button = Button.left
+			elif cmd["button"] == "Button.right":
+				button = Button.right
+
+			#check command: click or release?	
+			if cmd["status"] == "True":
+				self.click(button)
+			elif cmd["status"] == "False":
+				self.release(button)
 
 		elif cmd["event"] == "scroll":
 			self.scroll(cmd["dy"])
 
 		elif cmd["event"] == "move":
-			self.move(cmd["x"], cmd["y"])
+			self.pos(cmd["x"], cmd["y"])
 
 
 
@@ -60,11 +67,15 @@ with open("logs/log.txt", "r") as file:
 	logs = file.readlines()
 	file.close()
 
-
+sleep(3)
 for log in logs:
-	
-	# pdb.set_trace()
+
 	parse = Parse(log)
 	command = parse.command
 	controllers[command["obj"]](command)
-	sleep(parse.deltaTime)
+
+	#break on last command
+	if float(parse.deltaTime) == -1.0:
+		print('Done')
+		break
+

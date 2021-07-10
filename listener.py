@@ -1,15 +1,18 @@
+'''
+listens to keyboard and mouse events
+'''
 from pynput import keyboard, mouse
 import logging
 import log_compiler
+from time import sleep
 
 logging.basicConfig(filename="temp/log1.txt", level=logging.DEBUG, format='%(asctime)s|%(message)s')
 
 class Mouse():
-
+	#Mouse listener and logger configurations
 
 	def __init__(self):
 		self.obj = "mouse"
-
 
 	def on_move(self, x, y):
 		print("moved to {}".format((x, y)))
@@ -35,10 +38,12 @@ class Mouse():
 		event = {
 				"obj": self.obj,
 				"event": "click",
-				"button": button,
-				"status": pressed
+				"button": str(button),
+				"status": str(pressed)
 		        }
 		logging.debug(event)
+
+		# exist mouse listener on right click
 		if button == mouse.Button.right and pressed == True:
 			return False
 
@@ -63,7 +68,7 @@ class Keyboard():
 			event = {
 				"obj": self.obj,
 				"event": "press",
-				"key": key
+				"key": str(key)
 		        }
 			logging.debug(event)
 
@@ -81,11 +86,11 @@ class Keyboard():
 			event = {
 				"obj": self.obj,
 				"event": "release",
-				"key": key
+				"key": str(key)
 				}
 			logging.debug(event)
 
-		#exist on ESC
+		#exist keyboard listener on ESC
 		if key == keyboard.Key.esc:
 			return False
 
@@ -97,5 +102,7 @@ def main():
 			listner.join()
 
 if __name__ == '__main__':
+	sleep(2)
 	main()
-log_compiler.main()
+
+log_compiler.main() #compile logs for reading 

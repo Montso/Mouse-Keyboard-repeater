@@ -1,6 +1,7 @@
 '''
 listens to keyboard and mouse events
 '''
+from pynput.mouse import Controller
 from pynput import keyboard, mouse
 import logging
 import log_compiler
@@ -9,8 +10,8 @@ from time import sleep
 logging.basicConfig(filename="temp/log1.txt", level=logging.DEBUG, format='%(asctime)s|%(message)s')
 
 class Mouse():
-	#Mouse listener and logger configurations
-
+	
+	# Mouse listener and logger configurations
 	def __init__(self):
 		self.obj = "mouse"
 
@@ -90,11 +91,20 @@ class Keyboard():
 				}
 			logging.debug(event)
 
-		#exist keyboard listener on ESC
+		# exist keyboard listener on ESC
 		if key == keyboard.Key.esc:
 			return False
 
 def main():
+	with Controller() as mous:
+		pos_x, pos_y = mous.position
+		event = {
+				"obj": "mouse",
+				"event": "start_position",
+				"x": pos_x,
+				"y": pos_y
+		        }
+
 	keyB = Keyboard()
 	mous = Mouse()
 	with keyboard.Listener(on_press=keyB.on_press, on_release=keyB.on_rel) as listner:
@@ -105,4 +115,4 @@ if __name__ == '__main__':
 	sleep(2)
 	main()
 
-log_compiler.main() #compile logs for reading 
+log_compiler.main() # compile logs for reading 

@@ -1,5 +1,5 @@
-# MoKe-Shadow
-###### MoKe _(Mouse-Keyboard)_ Shadow. An automated script for recording keyboard and mouse events, and then calling the script to replay/repeat the activities.
+# Mouse-Keyboard repeater
+###### _Mouse-Keyboard_ repeater. An automated script for recording keyboard and mouse events, and then calling the script to replay/repeat the activities.
 
 ## Usage
 
